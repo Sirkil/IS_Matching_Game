@@ -20364,11 +20364,12 @@ l=k}q.Oi(new A.pb(n,B.Er,m,l,null))
 q.Ch()
 return A.P(null,r)}})
 return A.Q($async$acR,r)},
-hy:function hy(a,b,c,d){var _=this
+hy:function hy(a,b,c,d,e){var _=this
 _.a=a
 _.b=b
 _.c=c
-_.d=d},
+_.d=d
+_.e=e},
 CY:function CY(a){this.a=a},
 tb:function tb(a,b){this.a=a
 this.b=b},
@@ -63791,16 +63792,16 @@ a1V(){var s=null
 return A.iG(B.aR,A.d([A.fP(0,this.yi()),A.fP(0,A.ab6(new A.a5q(this))),A.XK(s,A.aeS(s,B.A9,s,B.Oc,this.ga8k(),s,s,"Full screen"),s,s,s,12,10,s)],t.E),B.bs)},
 a1R(){return A.ab6(new A.a5m(this))},
 a1S(){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=t.E,g=A.d([A.fP(0,A.tm("assets/brand/board_reference.png",B.dR,i,B.Oa,i))],h)
-for(s=0;s<4;++s)g.push(new A.iw(1304,[228,418,609,801][s],i,i,540,[182,183,183,182][s],A.tm("assets/brand/claim_"+j.r[s].a+".png",B.dR,i,i,i),i))
+for(s=0;s<4;++s)g.push(new A.iw(1304,[228,418,609,801][s],i,i,540,[182,183,183,182][s],A.tm("assets/brand/claim_"+j.r[s].d+".png",B.dR,i,i,i),i))
 for(r=t.kK,q=j.w,s=0;s<4;s=n){p=[224,415,606,799][s]
 o=[188,189,189,186][s]
 n=s+1
 m=B.d5[s]
-g.push(new A.iw(85,p,i,i,570,o,j.yp(new A.dD("product-"+n,r),"Product "+m.b,new A.a5n(j,s),m.d,j.Q===n,q.p(0,n)),i))}for(s=0;s<4;++s){p=[228,418,609,801][s]
+g.push(new A.iw(85,p,i,i,570,o,j.yp(new A.dD("product-"+n,r),"Product "+m.b,new A.a5n(j,s),m.e,j.Q===n,q.p(0,n)),i))}for(s=0;s<4;++s){p=[228,418,609,801][s]
 o=[182,183,183,182][s]
 m=j.r[s]
 l=m.a
-l=j.yp(new A.dD("fact-"+l,r),"Fact "+m.c,new A.a5o(j,s),m.d,j.as===l,q.p(0,l))
+l=j.yp(new A.dD("fact-"+l,r),"Fact "+m.c,new A.a5o(j,s),m.e,j.as===l,q.p(0,l))
 m=[265,455,646,838][s]
 k=j.r[s]
 B.b.K(g,A.d([new A.iw(1304,p,i,i,540,o,l,i),new A.iw(1341,m,i,i,i,i,j.KK(k,q.p(0,k.a),111),i)],h))}r=j.Q
@@ -63808,7 +63809,7 @@ if(r!=null&&j.as!=null){p=B.b.a5C(j.r,new A.a5p(j))
 if(j.ax)o=B.y7
 else{o=j.Q
 o.toString
-o=B.d5[o-1].d}g.push(A.fP(0,A.lD(A.rp(i,i,i,new A.B1(r-1,p,o,i),B.N),!0,i)))}g.push(A.XK(i,A.abt(A.d([j.LB("TIME",""+j.z+"s"),B.vn,j.LB("MATCHED",""+q.a+"/4"),B.vn,new A.ti(30,i,B.kC,j.gyb(),"Exit game",i,i,B.OO,i)],h),B.aZ,B.bO),i,i,i,62,40,i))
+o=B.d5[o-1].e}g.push(A.fP(0,A.lD(A.rp(i,i,i,new A.B1(r-1,p,o,i),B.N),!0,i)))}g.push(A.XK(i,A.abt(A.d([j.LB("TIME",""+j.z+"s"),B.vn,j.LB("MATCHED",""+q.a+"/4"),B.vn,new A.ti(30,i,B.kC,j.gyb(),"Exit game",i,i,B.OO,i)],h),B.aZ,B.bO),i,i,i,62,40,i))
 return A.Ph(new A.dq(1/0,1/0,new A.BX(B.dR,A.vE(A.iG(B.aR,g,B.bs),1080,1920),i),i),B.fT,!0)},
 a1T(){var s,r,q,p=this,o=null,n=A.fP(0,p.yi()),m=t.E,l=A.abt(A.d([A.aaM(p.zT("TIME",""+p.z+"s",!0)),B.Ib,A.aaM(p.zT("MATCHED",""+p.w.a+"/4",!0)),A.aeS(o,B.kC,o,o,p.gyb(),o,o,"Exit game")],m),B.aZ,B.bO),k=A.d([B.Nf,B.vp],m)
 for(s=0;s<4;++s)k.push(p.MF(B.d5[s],!1))
@@ -63915,14 +63916,10 @@ A.a5p.prototype={
 $1(a){return a.a===this.a.as},
 $S:412}
 A.a5z.prototype={
-$2(a,b){var s,r,q,p=null,o=Math.min(b.b,540),n=this.b,m=o*(n?0.3388888888888889:0.33157894736842103),l=this.a,k=this.c,j=k.a,i=l.w.p(0,j),h=n?l.as===j:l.Q===j
-j=""+j
-s=A.fP(0,A.tm(n?"assets/brand/claim_"+j+".png":"assets/brand/product_"+j+".png",B.dR,p,p,p))
-r=n?"fact":"product"
-q=n?"Fact "+k.c:"Product "+k.b
-q=A.d([s,A.fP(0,l.yp(new A.dD(r+"-"+j,t.kK),q,new A.a5y(l,n,k),k.d,h,i))],t.E)
-if(n)q.push(A.XK(p,l.KK(k,i,o*111/540),p,p,o*37/540,p,m*37/183,p))
-return A.OL(new A.fc(B.zy,A.vE(A.iG(B.aR,q,B.bs),m,o),p),p,p)},
+$2(a,b){var s=null,r=Math.min(b.b,540),q=this.b,p=r*(q?0.3388888888888889:0.33157894736842103),o=this.a,n=this.c,m=n.a,l=o.w.p(0,m),k=q?o.as===m:o.Q===m,j=A.fP(0,A.tm(q?"assets/brand/claim_"+n.d+".png":"assets/brand/product_"+m+".png",B.dR,s,s,s)),i=q?"fact":"product",h=q?"Fact "+n.c:"Product "+n.b
+h=A.d([j,A.fP(0,o.yp(new A.dD(i+"-"+m,t.kK),h,new A.a5y(o,q,n),n.e,k,l))],t.E)
+if(q)h.push(A.XK(s,o.KK(n,l,r*111/540),s,s,r*37/540,s,p*37/183,s))
+return A.OL(new A.fc(B.zy,A.vE(A.iG(B.aR,h,B.bs),p,r),s),s,s)},
 $S:413}
 A.a5y.prototype={
 $0(){var s=this.a,r=this.c.a
@@ -63930,7 +63927,7 @@ return this.b?s.Cj(r):s.Ck(r)},
 $S:0}
 A.a5w.prototype={
 $3(a,b,c){var s=null,r=this.a
-return A.rp(s,s,s,new A.Ce(this.b.d,b,s),new A.I(r,r))},
+return A.rp(s,s,s,new A.Ce(this.b.e,b,s),new A.I(r,r))},
 $S:414}
 A.Ce.prototype={
 aK(a,b){var s,r,q,p,o=this.c
@@ -63984,7 +63981,7 @@ j=s.my()
 i=s.my()
 h=4+s.my()*7
 g=s.my()
-f=B.d5[s.Ay(4)].d.k_(B.c.eq(o,0,1))
+f=B.d5[s.Ay(4)].e.k_(B.c.eq(o,0,1))
 J.Z(n.save())
 n.translate(l*r+(i-0.5)*r*0.25*d,-10-k*q*0.25+q*(0.65+j*0.85)*d)
 n.rotate((g*3.141592653589793*2+p)*180/3.141592653589793,0,0)
@@ -67715,15 +67712,6 @@ B.C4=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
 B.BR=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.CH=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
 B.AP=s([B.C4,B.BR,B.CH],t.zg)
-B.yI=new A.B(1,1,0.9137254901960784,0.1803921568627451,B.h)
-B.Gg=new A.hy(1,"Aurevia","Pigmentation Care",B.yI)
-B.yi=new A.B(1,1,0.33725490196078434,0.5490196078431373,B.h)
-B.Ge=new A.hy(2,"Cellevia","New by Ideal Solutions",B.yi)
-B.yH=new A.B(1,0,0.9372549019607843,0.9098039215686274,B.h)
-B.Gd=new A.hy(3,"Amelan","Skin Quality Builder",B.yH)
-B.yo=new A.B(1,0.1843137254901961,0.7686274509803922,1,B.h)
-B.Gf=new A.hy(4,"Vitaran","Calcium Booster",B.yo)
-B.d5=s([B.Gg,B.Ge,B.Gd,B.Gf],t._V)
 B.Bc=s([4,9,14,19],t.t)
 B.Ct=s([137,80,78,71,13,10,26,10],t.Z)
 B.Ag=new A.jt(0,"png")
@@ -67776,6 +67764,15 @@ B.OE=new A.iX(8,0.12)
 B.OD=new A.iX(12,0.14)
 B.kR=s([B.OC,B.OH,B.OF,B.OG,B.OE,B.OD],A.ad("x<iX>"))
 B.kS=s([0,21,51,121,151,191,271,321,360],t.n)
+B.yI=new A.B(1,1,0.9137254901960784,0.1803921568627451,B.h)
+B.Ge=new A.hy(1,"Aurevia","Skin Quality Builder",3,B.yI)
+B.yi=new A.B(1,1,0.33725490196078434,0.5490196078431373,B.h)
+B.Gg=new A.hy(2,"Cell\xe9via","Calcium Booster",4,B.yi)
+B.yH=new A.B(1,0,0.9372549019607843,0.9098039215686274,B.h)
+B.Gf=new A.hy(3,"Amelan","Pigmentation Care",1,B.yH)
+B.yo=new A.B(1,0.1843137254901961,0.7686274509803922,1,B.h)
+B.Gd=new A.hy(4,"Vitaran","New by Ideal Solutions",2,B.yo)
+B.d5=s([B.Ge,B.Gg,B.Gf,B.Gd],t._V)
 B.BQ=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.vt=new A.vR(0,"left")
 B.vu=new A.vR(1,"right")
