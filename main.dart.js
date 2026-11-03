@@ -63891,7 +63891,7 @@ r===$&&A.a()
 return A.rp(s,s,s,new A.B0(r,s),B.N)},
 $S:409}
 A.a5q.prototype={
-$2(a,b){var s,r,q,p,o=null,n=b.d,m=n<680
+$2(a,b){var s,r,q,p,o=null,n=b.d,m=n<680||b.b<600
 n=Math.max(0,n-84)
 s=m?110:165
 s=A.tm("assets/brand/ideal_symbol.png",o,m?108:162,o,s)
